@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <style>
+        body{
+
+background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRgSFREYGBISEhgSGBgYGRkaGBgYGBgZGRgfGBwcIy4lHh8rHxgZJjomKy8xNTU1HCU7QDszQC40NTEBDAwMEA8QHhISHjQkJSs0NDY0NzQ0NDQ0MTQ0NDQ0NTQxNjQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0MTQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQQFBgcDAgj/xABEEAACAQMCAgcFBAgEBAcAAAABAgMABBESIQUxBgcTQVFhcSIygZGhFFKSsSNCYoKiwcLRM3Ky8RUWQ1MkJTRjk8Pw/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAEDAgQF/8QAKBEBAAICAgIBAwMFAAAAAAAAAAECAxEhMQQSURMiYTJBoUJScZGx/9oADAMBAAIRAxEAPwCxHhwyAANzqbYchgjFSiW6k9o25UnmP7V50v8AcOs9xU/TP6o8ab9lMzCPS6xLnUW95874UDu3xvTbPR9bRjeQkAyHPoO7lTG5vuyuUjHv3EelBvuULk9xAGCDUgqyE+6QBy2/vTRuDvLd2051KtuJGO2xJ0qBv47/AAzXNqxaNS6pM1ts/ThJk/xG2PNV2z6nmalrK0jiXSiBRnJx3nxJ5k7d9d1WlpWla9Q0tebdy43UIkR0PJ0ZPmMVn9vK8eYyPbUlMb+8ux/LnWjGsu6d8OlmuB9mf2HZkmQEqA6BM6z3jBGw55POupmI5lz6Tfpz4h0miibs0HaS7KqKcKCce+3IDfzO3KtD4LZvFGA7AysAz6c6A33UHco5Dx51l3Eei8sJ7WKRAVPugcsY9pWI2IIyNq1y0ZiiFhhyilhtsxUZG23Oua3i3UrOOa9w7iikpRXaCjFFFAVVrhxG7p92RX/dcacn45Jq0iozinDVkDtj22jKeo7/AMqzyV9o4aYrRWeUbYKHdo3AIVyMHlg4dcD0YfEVZEUAYHIbVCcF4e4btZAQ+hVI2wSNWT8iPkKnKYo1VcsxNuBRRRWjINXzh0htnjuZ43HtrO5Oe/UxZT8QwPxr6PqG4x0Zs7tg00CuwGA2WR8DfGpCCR5GpIovVLbuiXMp2jkeGJPNkLs+PQMK1CI0wtuHLGFRECRoNKIowqjv9Se8mpFFxQeqKKSgKKKKoZ8Ul0pj7xxVZ4hllCj3mbSB5nbeprirAnJbAXl51FcMj7Sdfuxgv8T7ufz+FeLL92SIevF9tNrNZQCNFQclUL8hXuWMHfA23Ga6rRXseSeTZ3Yfq1VbzhtwXMhXUSSTpPj5HerkRSaa4tSLduLUi0alQPskv/af8Df2orQMUVx9CPll9D8vJUUmgV6orZ6HnQK9AUUUC0A0lKKANU/pKRBcLJnCTALJ4ZU+w2PHGRnwq3mqz0xtEkCas5IdRg8iACD54zyrLNG6y38aYjJG+pN7/BTHMEas+R5/mPlU5wC57SFcn2k9g/u8vpiqRYTusckL7vHlcHfA7iPLHfUz0Sv8yFOSvGDj9pd/qpNefDPrbUvT5GP7Z/C4UtJS17XzyikooqgooooCiiigKKKKBaKKKBMUtRHSfj8fD7c3Misyh1UKgBYsxwMZwB3nfwp/w69S4iSeM5jlRZEJGDpYZGR3GoHFJS0UCVxd88u7b413NRf2nDMBuA5Qep9on6iubTqHVY28X4GnevHR610qznnI5P7o2X+fzpOJnbHef96lLWLQir91QPpWNK7vMtbW1XTvRRRXoYCkpTQaoTNFGaKgDSV6NeaAooooClpKKANN7m2EmMkgDPLG4OMj6U4rzI+lS2CdKk4HM4GcDzpMRPaxMxPClcemg+0O6N7aKsUoCnAOCVweRbGxxnGBXPobw93ft9WFjdlIx72fdA9FA+dSMfBpLlmedSisGwoIySwxnbkAMYzucfOe4VC8cSo5BdFCMwGAxG2QPMYrGKbt7S9NssRT1idyeUUUVs8pQaKSlqgooooCiivExOltPvaTj1xt9aD3RWQ9TfHLia4mhmnaRXiNwA5zhzIocrnlnXuBtWvVAUtJS1RUetO2MnDJ8c07OX4LIhb+HVXvqwue04ZbnvjV4vwO6j6AVL9KLXtbK6jHOS1lUeuhsfXFU3qRuddjIn3LtsejojfnqqDRqKKKAqu3EhMqxpsiapXPluFB82Y59EarCTULxKNpSyxYD43bz5Ak95G5HpXGSOGmLtD8Lma7uHC57KGQoSf1nQ4f4AjTj1q5Co/g3CktU0Kck4yfE/7k1I0x19YMtotPHQoooNdswaQ0UGqEooooFNJQaKgKKg+kXSKKyjMsrkJq7NAoBd3GchQdgBg7+R5Y3iOjHT+3vX7IK6SYyFfSdQHPSy7bcyDvjJ3AOJsXOiiiqFpKK8SyKil3YKijUzMQFAHMknYCgpXRbp011ezWMtuImjaXQdXtERtpZXB/XxvkHGx9TeK+eelnF404o95aSh1WWOYMuQpdVUOAcbqdJyRkEMasn/GekfE/8CJoIW5Mq9kuD/7kh1H1Sg1TinF7a0XXcTpEp5amAJ/yjmx8gKThPF7a7TtLeZJEB0krnKnwZTgqfIgVm9h1SPITJe3zNKw/6eXbP7UkmSw8tI9aunQrosnDIXiWQyPJIXdyunOBpUBcnACjxO5PoAslFJS5oCijNAqgooooML6IZs+OtDyVri5tsfsNreP5lUPxrdKwzrAP2TjS3AOAWtronyUhW+kZqe4/acck4qRA80cDMojkU5gWFQusuudJOSx0sNRPLbGINWFFAqtRdPOGNMbcXi6w2jJDBC2cYDkaSc7c8VRZJE1AqeTAr8xisn6jXKfbIDzRoW+P6RG/0itZFYPwXjw4Xc8UIx2n6VIlI2Mi3JRNu8AOWI8FNQbk91GrBGkQOeSllDH0BOTXY1892fQi8vrWTiZkDOxdwrgmSYJnW2rkDkMAMb6eY2rR+qPjz3Vq0crlpLZwgZiSzRuupNRPPGHXPgooL2XXOkkZwTjO+B5Vyt4Qo2HM58z61BcOt3ubl7p1KpCzRRIdtxlXYj5j1J8Ksgq2iISLbgUUUVFFJS0lAUGilNUJRSUUBRRQagyLrfjf/wAGTns+zkU+GvKFs+f9jVL6Ngi7gKe8ZV/Cdn/g1VuXHeGw3EbQTxs8LNrUps6P95T8T8zsQdqY/RaPh69vbJI8msJ2kukmJG2yiKN8nCFjvpYgc81OiWoITgZ5439a9VwtZu0RHxjWitjwyM4rtV7HO6uEiR5HbSkaM7se5UBZj8gaxWW9u+kdyYVlWC0j9sIzDZQdmKA5kkPPHur4jm21zwpIjRuoaN1KMrDKsrDDAg8wQSKrvB+gnD7O4+1QxMJAGCAuWVNQwxQNuDgkbk4BNBlXWR0Xh4YbbsC5LpIWdzlmeNoyGxyHvjYDurdracSIkg5SRrIPRlDD86zfrxgzbW0n3Llk+Dxsf6BVt6BXXa8OtX5kW6Rn1jGg/wCigsFFQl10t4dE/ZPfQq+dJGsHSf2iMhf3iKmlYEZByCMgjkR5UC0VH8b4xBZxG4nfTGpVSQCxyxAACjc86ofWD05dVhgsJNUl2iyCRBlgjtoRUB5OzBh4jGNicgNMpawy16Q8X4PcIL1pWikwzrI4kDJkB2RwThlzyB8MjcVtlzdJHG8rsBHHG0jN3aFXUT8hVFJ6yOnDWAFvAV+1OussQCIk5A4OxZiDgHYAEnuzml51hcSmhELXG4kVxIihJPZz7JKYGnODsAdsHINS/QWxPF+JyXk41Rxt9oZTuNROmBD4hQvL9jzqv9YFglvxC4jRAsYdHRVGFAaNGOkDkMsagkOn8klxb8Ou5G1S3Fk8btgDUY3GCcbZ9s1onHusBbG3spOxMrXcCSsNWnSgRC5BwctlxgctjVP6X23/AJJwyTHuEL8HR2/NBXHpSO14Jw2Xn2Uj25PoHX/6hQXrrL6RmDh6mMlZL4LGp/WVGXVI23fpIXI72FZ/b9W9zPYQ3UKhp5S0hjZwuYSAIwmRp1HGrcjZwO6n/S/hl1e8N4dcxRtIkNqY5AgLOpxGurSNyMxtnHKudt1r3SRx28NpFrjjSMEl3J0KF91dOOXLNBr/AAC1lhtoIpW1SxQJG7ZJyyqAdzueXPvr5+6xoOy4ldjGxlEn40Rz9WNWq160eI28im9tV7J/a09m8L6M4LIWOGx4Eb+IqM62o0/4isnOOe2glJ8UyyEj91KDZ+jdkLe0t4cf4dvGh82CDV8zms16qo/s3Er60GwVX0jyhn0L/DIK1305VlfBU7LpJcry1xO3rrjhk/PNBqgpKKKoKK8yOFGTn4An8qbreoTjOP8AMCv5ipMwupOqK8B69aqqFrldXCRozu2ERSzHwA/P0qK6QcfSzVcxs7yatIGAvs4zqY8uY8az/pFxmeckSSKE2dUX3MEbau8nB5+XdXVazblYja4/89WQ5pLnn7qnnuOTUtZcrsuynIHI/wAvhyorv0j8jeKKU0YrFHJkBpOyGMEAg7EHvrrRiqEApaKKBRRQKKDPuuiaMWKRswEj3KMi97aQ2v0AVufmPGsz4KeK3kK2FsJGt42Ysq+wntsWPavkAjJPsk/A1r/WbwqOewnkaNWkt4jLG5A1JpKs2luYBVcEd9UvqPvMS3NuT78aTKPNGKMf40qCb6NdVdrEiNdgyzc2VWYRLvsoC4LDxzsd9sVooGNhyG1LRQVXrL4es/DrjPvRILhfWM6j/DqHxrJeq+y7fiUOrdYFefB39xSEx4YdlNbtxu37W2njPKS3lj/EjD+dZJ1HRBrmdz7y2qgeOHcFv9C0Fm66LASWSTY9qC4X8EgKMPxaPlTXpNxo/wDL8L6vbuoYLYnx2/SfNY3+dWbrIt+04ZdD7sYk/wDjdH/prNOLkv0eszz0XzqfIaroD8wKC69TdiI7Ay49q4ndyfJD2aj5qx+NULrfUDiTY77eIn19ofkBWldU8gPC4B9151Pr28jfkwrMetuTVxOQfcihT46NX9QoLZ0ots9HbY/9uK0k/FpX+uoK3/S9HJBzNpfA+mp0Y/Sc/WrheIJ+jg/Z4dG371uEP5x1VegSmbhPFLcDLBWkUeJMWR9YqC69UNzr4ai53illj/jLj6OKuoUZzgZ8cb1mHUbdhre5izuk6ygeToFz84zXniHXBEokWO0ZpEdkRnYCMqCQGYe8OXu4+I7gieuy4Etzb26e1LHC2QOeqVlCL6nRy/aHjXDrl4eYms15kWRgz4mIqP66e9XfRy4vro8WuwSmvtU1DHayDZWVe5EwMearjkavHTvocvFEjHbdnJCzFG0h1IbTrDDIP6g5Hu76Cf4ROJLeGT/uQRyfiRT/ADqjXPR27XjyXyx5tXX23DLhcW5jIYE5zqC423z61d+CWH2W3hty2owQpFqxjVoULnHdyp7QJSs2KShqojrnxEhUHb9U/mKS3lxsZQ/kFAI9d69yWpzkBc5543rhdSmNSxXPcAo9pj4AVnO4a1mJ4OjJS9rTKMs4yAR5Gu6Wr95xXMTaeoJisdoPpvbGS1dgfbiYSg+Q2f4aST8KyySRGCkkuy5TbYYO48/GtzexRlKsMqwKkHvBGDmm3D+A21uNMUKIPIDJ9W5n4mtq2tEacTMMZj4PdEAi2nweWEbHw9mit27BfCiru3ym3ailpK5QYoxS0VQmKKWgnFQJRQrg7g5FeQ41acHIAbkcYJI58s7cudUNON2vbW08WM9pBJH+JGH86wrqku+z4lEO6aOSI/FNY+qCt8u7uOFDJLIiIvvM7BVHqTtXzAbk29y0ltIR2czmF1G+nUwVgGHepHMd9QfSfGeOWtmuu4nSMHkGPtN/kUZZvgKzvjPW+gytpalu4PMdK+oRdyPVlrPV6P8AE7p1f7LcySTDUJHV/bHiXfYD1Iq89H+qJ2Ia9nCLz7KE5Y+TORhfRQfWgYdGOm3F7u9jQMJEkkVZIljUIsRYCRsgalwM+0W5+PKvPU6xi4jJDnnbyx/GORP5Bq2Lg/BrazTs7eFY02J0+8xHe7Hdj5k1n/AuhN5a8XN5hDavLcvqV/aCShyilSAdWpl5ZHsnflkLv0st2ksblEUs8lrKqqObMUbAHnms36NcLkveAz2yo3aRXLtGCCNTIUk0jPeSXX1NbBSYoMc6pOlcNsklpcSLGmozxu5CLkgB1JPI+yGHjlvCqT0v4it3e3NyuSjyeyf2ECxox8AQq/iFbH0o6tbS9ZplZoJ2OpmQBlc95ZDj2vMEZ781Dcc6CQWHCroIWeZkSR5GABKxSK+lVGyrgMfE952GAfdAwbngbQ4LHsrqDA3J1Fyox6OKhOpGCRWvFeNgumKNgykAMpk1Kc9+G3HmKkOo+4zbXER/6dysnwdFH5xmtIkmjTJZlUHckkDyyc+lF1tVej/QC3sLk3ME0yoVK9iW9jflqPNlHcGzg75qXn6L2Ekv2hrOFps5LFFJJHeRyLeZGa6y9IrNOd1F8HDfQZpq/S+wH/Xz6I5/pqe0fLqMV56if9JwDG3cNq9Cqy3Tex++/wCB/wC1C9N7H77/AIH/ALVPavy7+hl/tlZaKjeGcctrkMYpAdGNQIKkZ5bMBt5+VSQINdRO2dqzWdTGiUUUtHJMU2lg1Hf3cU6NApMbWJ08JGBXrFFFVBiiilNAlFJRQcO1PjSdqR303MlI8u2Qdu+vifVv8y9PpHweCY15E5zjTtjnnv3yMfL50y+0DxprPfsraQDgrq5eoPywPnXox+ReZ5ScUJsS0yv7+IAxu2zgoQOe4PhUDf8AE5QmEGp3YIoJ0qCxwC7dy+JqSgjjgCK+hrnTlnCnAPe25JA8BnJ+ePVXJNo+IT0ip/w9REqoWLM3LPMbd/ngU+qK4YrOxlbOkDQmdifvNjz7qla2p0yv2qnTzoi3FEjQXJi7Fy+CutGLADJGQdQGcb/rGotOqjh4WMapdcbh3fXvLggkMvJRtgacEeJq/wBFdOQTS0mab3V9FEMySIo/aYL+ZosRM9HNFVS/6c2qZEYaVv2Rhfm35gGq1f8ATe7k2TTEv7I1N+JtvkBXE3rH7vRTxMt/21/lp0kiqMswAHMk4A9SahLzpZZR7duGI7kBf6j2frWV3d1JKdUsjMfFmLY9M8q7WXCLif8Aw4HcHkwGF/E2F+tcfVmf0w9VfBpWN3suN31hLyitmPm7Bf4VB/OoDi3Sy6uUaF9CxSoyMqjdkYYYZYkjIPMYp9Z9A7l95HSMeG7t8hgfWp206BWy++7ufUIvyUZ+tTWS34X28TH1G/5ZrZ/oAwiJQPjXoZl1ac41YO+Mnn4mu0NtJKfZjdz4qrOfoDXvqolaXiDxy4cC2kwGAIDLJGAwGMA4yM+dbeowMDYVfpTPcuZ86lf0VZDbdFr6Tlbso8WKr9Cc/SpKDoFdt7zxL+8zH6L/ADrTKK6jFVlbz8s9ahQ4urw/rXX4Y/5lv5U5Xq+g755c+QUfyNXOvDSAEL4116V+Gc+Vmn+pUl6vrb9aSVvio/pqz8Ps1gjSJSxRF0gscnHmacUtWIiOmV8t7/qnYoooqsyUUUVQUUUUBQaKKBKKWioIIq55KT8h+de1snfGcrg52J+XnUzpHhS4rzV8Wle+Ws5rSax2SAcs11W3UcgK60ma9EViOoZzMya3fDopVKOgZWGDnwNcoOERoxfdmY5y5z/vT+lFT1rM7mFi0xGtgCijNFduRRRQDQVfplwm5nVWgkbKE5jDBNWf1gcjcctzy+tGueCtFvcTRxt3rq7SQ/urn5kithqDg6K2aO0nYhmZi+HJZVJOTpU7c6ztT2nb14PJmldT/Ecs6sOESXH/AKeB3XlrfCJ8MHH8TelWaw6A53nn8ykQwPmR/TV6UAbDkKWkYqx2t/NyW4rx/wBRNh0ctIMFYF1D9Zvab4Fs4+FS2KKWu4jXTyza1p3adsz4103uo+MJZR6ew7W3tnVhnU0pQuwPMEBwB3ezyOa0meUIjOTsiM59FBJ/KsM6yo2s+Lrd6SVdre7XzMWhWA88x/xCr31i9LII7FlilV5L2LRGFYE9nIPbc45DQTjzIo5U3qSiL3k03clqQfWSRCP9Brbazzqa4OYbR7llw12+V8ezjyqfAsZD6EVodAUUUUBTe6XbI7t/h304rjdD2CPHb50npY7CzrgEmvccqtyNRETtj2jvjl504t5MMPAnHzrKuTbu1NJKiiitWYpKKKoKKKKAooooDFFGKKgKKKKoSilNFQJRSmkoFFFJRQLRRSiqEpDS0lQFKKBRVBRRRQQPSzotb8TiEcuVdCWSRca0J589ipwMqfAciAaoXC+p4rKDcXKtArZKxqyvIPAkn2M9+NR8COY1ulqDxBEsarGihURQiqBgKqjCgDuAAAr3RRQFFFFAUjrkYpaKCCnhZD7W48a6I2e+ph0B5io64tMbr8qwtjmOatYvviXeG7GdLbeB/vTrNV6SXTsRiu9tesvLdfA/ypXNqdWW2PfMJqim8Fyr8jg+B/8A29d63iYnmGUxrstFAoqoKKKKAzRRRQFFFFAUUUUBSUuKSoCucsgQZJAHia64pnxK2EiNGeToyZ8MjY/Ok9LWNy7hvOugbNMLdiVwTlgMHzI505hGK5rbbq1Yh3oNFFduBRS01v8AiUFuuuaZI17i7qgPpqO/wqB1XKO5jdmRZFZkxrVWBK5zjUByzg8/Cs/6Q9Y9okeqM9s7s6pEMqCFYrrnPMKSMqg3YEE8/ZToC13JIs9xcRmSTWghR4/Yt9Opconu6XCgDJIEjZwc5DRaUnFJUT0pkC2s2eRjK/iwv86T0sRuUrHIrqGUgqwDAjcEHkRXqs+4X0hkghWFY1xENILE7IzEo2BzUbqRn9XPkZvgfSRppjFIqoSPZAzzG/vH3gRnuGCCN65i9Z4dzitHKzUUUV0zFFc5pVRS7EBVBYk8gBuSa52V2ky61JxqK7gggjmCDTa6nWzikIopaIYX1oHGcbiogxlTVlIpndWudwN6xy4vb7o7aUvriUVG9P7e9xs248e/4+NMZIsU2ubjs0ZydkUt8hyrz1vakt/SL8LHa3UcqhkYMpyM+YOCCDuCD3V2rJeAcaltn1g6kbGtSdmJO58j51pnC+Jx3Kh0b1U7Mp8x/OvXW8Wc5/GtinfcfJ9RRRWjzCiiioCiiiqCiiigKCaKKAzXmVNQIoooGMT4YofeHf4+f0pzHz+FFFZR20t070ppKK1ZoHpB0jgtFZpJDGE0hmVC7ZfOlUGMajjm3sjbn3UK+43ccUjlitYEigMbGeSUh5CmnUAx3JZhyC7L97uCUVBZODdXlpCvtFpJXGJHkWN9RO5wrqwX1HPvzU/w/oxZQy/aIrZRP7X6TfX7XvEkncnJ3570UUE1Ub0htxJbSoe+NyPUDUPqBS0UlY7Z1ZMHjEhY5j/RsPvKfH5U5hmCurAYVHBUd/Pbf4UUV5P3e2emnUy4vxBLWGS4cEpChcheZA8PM8vjRRXr/Z4WTT9ZssjFJbaM2x95FLCQAnIKvnGRgHlzHdWqcFjjjhRI8lNIIJ5kMA2T5nVmiiuY7X2n10kKWiiukFIRRRQNbm3B3HOqR01uRHGsY5yt9FO/1xRRXnyxG4evxObwqUZ7/l691O7W6aJhIpwY+R+G+3h3UUVnL7cRuNSsfDum8iH9ONatgrpADDx8AR9avtvMJEDrurqGB5bEZG3oaKK9GKZmOXyvPw0xz9sae6KKK0fOf//Z);
+    }
+
+    *{  
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+    header{
+        border-radius: 6px;
+        padding:30px;
+        padding-left: 30px;
+        /* background-color: rgb(32, 32, 32); */
+        margin-left: 20px;
+        margin-right: 520px;
+        padding-top: 7px;
+        padding-bottom:7px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 19px;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    a{
+        padding-left: 10px;
+        color: white;
+    }
+    h1{
+      
+        margin-bottom: 0%;
+        padding-top: 12px;
+        padding-bottom: 19px;
+        font-family: Georgia;
+
+        font-size: 40px;
+        padding-left: 500px;
+        padding-right: 670px;
+    background-color: rgb(5, 155, 5);
+    }
+    button{
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    .a{
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.767);
+        color: white;
+        border: 5px solid black;
+        padding-left: 50px;
+        margin-left: 40px;
+        margin-right: 900px;
+        border-radius: 5px;
+    }
+    .d{
+        border: 2px solid black;
+    background-color: rgb(0,0, 0,0.8);
+    color: orangered;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+    .f{
+        background-color: black;
+        padding: 25px;
+
+    }
+    .g{
+        margin-left: 100px;
+        margin-right: 150px;
+        border: 5px solid black;
+        padding-top: 50px;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+    .h{
+        border-radius: 6px;
+        font-weight: bold;
+        background-color: rgb(0, 0, 253);
+        font-size: 34px;
+        padding-left: 44px;
+        margin-left: 55px;
+        margin-right: 1200px;
+        padding-top: 8px;
+        padding-bottom: 9px;
+        margin-bottom: 50px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        border-radius: 4px;
+        padding: 20px;
+    }
+    .x{
+        background-image: url(https://st.depositphotos.com/1905901/1876/i/950/depositphotos_18763017-stock-photo-cozy-couple-reading-book.jpg);
+    }
+    #q{
+        padding-top: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 200px;
+        padding-left: 400px;
+        font-size: 60px;
+        color: black;
+    }
+    </style>
+
+</head>
+<body>
+    
+ <h1 align="center"> <marquee behavior="slide" direction="right">English books</marquee> </h1> 
+<div class="f">
+ <header>
+
+    <a href="about.html">About Us</a>
+    
+    <a href="home.html">Home</a>
+    
+    <a href="coding books.html">Coding books</a>
+
+    <a href="physics books.html">Physics books</a>
+
+    <a href="math books.html">Math books</a>
+
+    <a href="english books.html">English books</a>
+
+    <a href="survey form.html" target="blank">Survey form</a>
+
+
+ </header>
+</div>
+
+<div class="x">
+<br><br><br>
+
+<p id="q">
+    <u>
+        A step towards English
+    </u>
+</p>
+
+<div class="a"> 
+    <h2 style="font-size: 25px;"><b>Welcome again!</b></h2>
+    <p style="font-size: 21px;">
+        Here we provide the best books for the English Engineering students. 
+        <br>
+        Keep learnig!
+    </p>
+</div>
+<br> <br><br>
+
+<p class="d">
+    English is a West Germanic language originally spoken by the inhabitants of early medieval England. It is named after the Angles,
+     one of the ancient Germanic peoples that migrated to the area of Great Britain, which later took their name, England. Both 
+     names derive from Anglia, a peninsula on the Baltic Sea. English is most closely related to Frisian and Low Saxon, while its
+      vocabulary has been significantly influenced by other Germanic languages, particularly Old Norse (a North Germanic language), 
+      as well as Latin and French.
+<br>
+    English has developed over the course of more than 1,400 years. The earliest forms of English, a group of West Germanic
+     (Ingvaeonic) dialects brought to Great Britain by Anglo-Saxon settlers in the 5th century, are collectively called Old English.
+     Middle English began in the late 11th century with the Norman conquest of England; this was a period in which English was
+      influenced by Old French, in particular through its Old Norman dialect. 
+</p>
+<br><br> <br>
+</div>
+
+<br><br><br>
+
+<p class="h">
+    Our books
+</p><br><br>
+
+<div class="g">
+<a href="https://drive.google.com/file/d/1WCE0Yri1MoRo-aWZQuxJXMGuOoPZdPvk/view?usp=sharing" target="_blank" ><img width="400px" height="350px" style="margin-left: 100px;" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQMtir9qspI8qi3yMX0LjgUgIhW_uLi0jqhTGuV68wIWTI7XzSaLN9_J70XDBpWd55JYH6ac-gGRdbQr-z3TRz6O6gD0tjqW6ne8tFH60NdZmKhV1P8A9aqBg&usqp=CAE" alt=""></a>
+
+<a href="https://drive.google.com/file/d/1WCE0Yri1MoRo-aWZQuxJXMGuOoPZdPvk/view?usp=sharing" target="_blank"><img style="margin-left: 140px;" width="400px" height="350px" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSnBBRq8oTFAhj2ZHx5KGJwpz7hlOnskTDpx62MDJUMUT66y85XCbSeOjBYDY6r0w_9yU1ZmCmSMI5MhfiZfmCS6speo5nTprOlcUGjdA4&usqp=CAE" alt=""></a>
+<br><br><br>
+
+<a href="https://drive.google.com/file/d/1WCE0Yri1MoRo-aWZQuxJXMGuOoPZdPvk/view?usp=sharing" target="_blank"><img width="400px" height="350px" style="margin-left: 100px;" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTqbttcV6QedDzeigr63T6bXGFVBgagljlaNmCKyCeOYGV_AG891g4MLuRV3b4qr_J_WbG0SV5ztvXNdaMkiXIuBFwDha-eC5R_nVtoHfDtBZj7yo47Fh4X&usqp=CAE" alt=""></a>
+
+<a href="https://drive.google.com/file/d/1WBLTDmkXNWckUJJKL8LvTrehj1PmdKJf/view?usp=sharing" target="_blank" ><img style="margin-left: 140px;" width="400px" height="350px" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSdlEEvt92DGTedSxJ4SyR6rXXZBV7i8iWpHbtnWb2q6BbEOQZvzbinSjNbc_sag8af-q-WPJ8Uqt521PrgDvtiMYy-0EQ_pReN-I_Xk_Q&usqp=CAE" alt=""></a>
+<br><br><br>
+
+<a href="https://drive.google.com/file/d/1WBLTDmkXNWckUJJKL8LvTrehj1PmdKJf/view?usp=sharing" target="_blank"><img width="400px" height="350px" style="margin-left: 100px;" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTWVyoh2LKLkSLNXoNQSFZhARRfH_XyvDrXbgP8M5G8cE7AGNu6Zeb5R-jyngmudwRk8qW3VeePigItWxG3PDGQntcsQbCtadz0380R3lCa8aRaslWPiMnQfA&usqp=CAE" alt=""></a>
+
+<a href="https://drive.google.com/file/d/1WBLTDmkXNWckUJJKL8LvTrehj1PmdKJf/view?usp=sharing" target="_blank"><img style="margin-left: 140px;" width="400px" height="350px" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTciltrEwkJzvccrO5HuIhlPIovYXurk6APOATwlGw3FpVhYsjzB9IRB3eDRh1M5ovVpMCjGpXvf5I3pGaAJb1m9kRsumXIyFXgrIa-O43aJhNQFyxXLZrm&usqp=CAE" alt=""></a>
+<br><br><br>
+</div>
+<br><br><br><br><br>
+
+<footer style="padding-bottom: 40px; padding-top: 30px;">
+    <img style="float: right; padding-right: 40px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQI2AbHIorx3HXwaHcFtiRFde9o2JV6PDMg&usqp=CAU" alt="">
+    <h4 style="padding-left: 625px;">Copyright 2021</h4>
+
+    <br>
+    <h4 style="padding-left: 100px; font-size: 26px;">
+        Follow us on- <br>
+    </h4>
+    <h4>
+       <table>
+            <ul style="padding-left: 50px; padding-top: 10px ;">
+                <li style="padding-bottom: 10px; font-size: 20px;"> <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li style="padding-bottom: 10px; font-size: 20px;"> <a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li style="padding-bottom: 10px; font-size: 20px;"> <a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+       </table>
+    </h4><br>
+    <h4 style="padding-left: 570px; padding-right: 600px; "> <marquee direction="left">E-Library and Survey form</marquee></h4>
+</footer>
+</body>
+</html>
+

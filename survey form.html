@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+body{
+    background-image: url(https://images.unsplash.com/photo-1561471648-631bc475428d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: 900px;
+}
+h1{
+    padding-top: 11px;
+    padding-bottom: 17px;
+    font-family: Georgia;
+    font-size: 40px;
+     background-color: blue;            /*(117, 10, 218) */
+
+    padding-left: 500px;
+    padding-right: 670px;
+
+}
+ form{
+    font-size: large;
+}
+#n{
+    color: white;
+    border-radius: 7px;
+     background-color: transparent; 
+     background-color: rgb(0,0,0,0.6);        
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid black;
+    max-width: 800px;
+    margin-left: 300px;
+    padding-left: 13px;
+}
+h2{
+
+    border-radius: 5px;
+    font-size: 25px;
+  margin-bottom: 2px;
+  background-color: red;
+  padding: 5px;
+  margin-left: 240px; 
+  padding-left: 15px;
+  margin-right: 1040px;
+}
+.q{
+    color: white;
+    padding: 15px;
+    border: 3px solid black;
+    max-width: 230px;
+    border-radius: 7px;
+    margin-left: 400px;
+    background-color: rgb(0,0,0,0.6);
+}
+th{
+    padding-left: 15px;
+}
+
+td{
+    padding: 8px;
+    padding-left: 45px;
+}
+
+table{
+    color: white;
+    margin-left: 250px;
+    background-color:rgb(0,0,0,0.6);
+    width: 900px;
+  padding: 50px;
+  border: 3px solid black;
+    border-radius: 7px;
+    padding-left: 20px;
+    font-size: 21px;
+}
+.suggest{
+    margin-left: 300px;
+    border: 3px solid black;
+    border-radius: 7px;
+    max-width: 640px;   
+    padding: 10px; 
+    background-color: rgb(0,0,0,0.6);
+}
+
+.submit{
+
+    margin-left: 510px;
+    padding: 10px;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1 align="center"> <marquee behavior="slide" direction="right"> Survey Form</marquee></h1> <br><br><br>
+    <h2>Contact Info *</h2> <br><br>
+
+<form action="c.php" method="POST">
+    <div id="n">
+        <br>
+     <p style="padding-right: 440px;" >
+         Name :
+         <input type="text" name="name" id="name" required style="border-radius: 6px; font-size: 20px" placeholder="Full Name"></p><br>
+         <p style="padding-right: 450px;"> 
+             Age :
+             <input type="number" name="age" id="age" required style="border-radius: 6px; font-size: 20px" placeholder="Age"></p><br>
+
+     <p style="padding-right: 470px;">
+        Gender :
+          male<input style="margin-left: 5px;" type="radio" name="gender" value="m" required> &nbsp;&nbsp;&nbsp;&nbsp;
+          female<input style="margin-left: 5px;" type="radio" name="gender" value="f" required ></p> <br>
+
+       <p style="padding-right: 430px;">
+        Email :
+           <input type="email" name="email" id="email" required style="border-radius: 6px; font-size: 20px" placeholder="xyz@gmail.com"></p> <br>
+
+       <p style="padding-right: 370px;">
+           Mobile Number : 
+           <input type="number" name="Mobno" id="Mobno" required style="border-radius: 6px; font-size: 20px" placeholder="Mobile number"></p><br>
+
+        <p style="padding-bottom: 10px;">Address :
+            <textarea name="address" id="address" cols="50" rows="10" required style="border-radius: 6px; font-size: 20px"></textarea>
+        </p><br>
+
+    </div>
+
+
+<br><br> <br><br>
+<h2 style="margin-right: 900px; margin-left: 240px;">Rate us for our services *</h2>
+<br>
+<p class="q">
+    0<input type="range" name="" id="" >10
+</p>
+
+<br><br><br><br>
+<h2 style="margin-right: 900px; margin-left: 240px;">How satisfied are you with: *</h2>
+<br>
+<div id="o">
+<table >
+    
+    <th></th>
+    <th>Very unsatisfied</th>
+    <th>unsatisfied</th>
+    <th>Neutral</th>
+    <th>satisfied</th>
+    <th>Very satisfied</th>
+
+    <tr style="background-color: rgb(148, 148, 148);">
+        <th>Books</th>
+        <td style="padding-left: 70px;" ><input type="radio" name="books" value="v unsatisfied"></td>
+        <td><input type="radio" name="books" value="unsatisfied"></td>
+        <td><input type="radio" name="books" value="neutral"></td>
+        <td><input type="radio" name="books" value="satisfied"></td>
+        <td style="padding-left: 55px;"><input type="radio" name="books" value="v satisfied"></td>
+    </tr>
+    <tr>
+        <th>Services</th>
+        <td style="padding-left: 70px;"><input type="radio" name="services" value="v unsatisfied"></td>
+        <td><input type="radio" name="services" value="unsatisfied"></td>
+        <td><input type="radio" name="services" value="neutral"></td>
+        <td><input type="radio" name="services" value="satisfied"></td>
+        <td style="padding-left: 55px;"><input type="radio" name="services" value="v satisfied"></td>
+    </tr>
+    <tr style="background-color: rgb(148, 148, 148);">
+       <th>E-Library Overall</th>
+        <td style="padding-left: 70px;"><input type="radio" name="ELibrary" value="v unsatisfied"></td>
+        <td><input type="radio" name="ELibrary" value="unsatisfied"></td>
+        <td><input type="radio" name="ELibrary" value="neutral"></td>
+        <td><input type="radio" name="ELibrary" value="satisfied"></td>
+        <td style="padding-left: 55px;"><input type="radio" name="ELibrary" value="v satisfied"></td>
+    </tr>
+</table>
+</div>
+<br><br><br><br>
+<h2 style="margin-right: 940px; margin-left: 240px;">How likely are you to: *</h2>
+<br>
+<div class="p">
+<table>
+
+    <th></th>
+    <th>Very unlikely</th>
+    <th>unlikely</th>
+    <th>Neutral</th>
+    <th>likely</th>
+    <th>Very likely</th>
+    
+
+    <tr style="background-color: rgb(148, 148, 148);">
+        <th>Read from us again</th>
+        <td style="padding-left: 70px;" ><input type="radio" name="a" id="a"></td>
+        <td><input type="radio" name="a" id="a"></td>
+        <td><input type="radio" name="a" id="a"></td>
+        <td><input type="radio" name="a" id="a"></td>
+        <td style="padding-left: 45px;"><input type="radio" name="a" id="a"></td>
+    </tr>
+    <tr>
+        <th>Recommend our books</th>
+        <td style="padding-left: 70px;"><input type="radio" name="b" id="b"></td>
+        <td><input type="radio" name="b" id="b"></td>
+        <td><input type="radio" name="b" id="b"></td>
+        <td><input type="radio" name="b" id="b"></td>
+        <td style="padding-left: 45px;"><input type="radio" name="b" id="b"></td>
+    </tr>
+    <tr style="background-color: rgb(148, 148, 148);">
+       <th>Recommend our services</th>
+        <td style="padding-left: 70px;"><input type="radio" name="c" id="c"></td>
+        <td><input style="padding-left: 70px;" type="radio" name="c" id="c"></td>
+        <td><input style="padding-left: 70px;" type="radio" name="c" id="c"></td>
+        <td style="padding-right: 25px;"><input type="radio" name="c" id="c"></td>
+        <td style="padding-left: 45px;"><input type="radio" name="c" id="c"></td>
+    </tr>
+</table>
+</div>
+<br><br><br><br>
+<h2 style="margin-right: 900px; margin-left: 240px;">Additioanl comments or suggestions</h2><br>
+<p class="suggest"><textarea name="review" id="review" cols="55" rows="13" style="border-radius: 6px; font-size: 20px"></textarea></p>
+<br><br>
+
+<p class="submit">
+<button type="submit" style="font-size: 30px; background-color: green; width: 140px; height: 53px; border-radius: 6px; " >
+    Submit 
+</button>
+</p>
+<br><br><br><br>
+
+</form>
+</body>
+</html>
